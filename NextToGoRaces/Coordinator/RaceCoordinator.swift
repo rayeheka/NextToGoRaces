@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class MainCoordinator: CoordinatorProtocol {
+class RaceCoordinator: CoordinatorProtocol {
     var childCoordinators: [CoordinatorProtocol]?
     var navigationController: UINavigationController
     
