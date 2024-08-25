@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum RaceCategory: String, CaseIterable {
     case greyhound = "9daef0d7-bf3c-4f50-921d-8e818c60fe61"
@@ -23,6 +24,19 @@ enum RaceCategory: String, CaseIterable {
             return "Horse racing"
         case .none:
             return "NotSupportedCategory"
+        }
+    }
+    
+    var image: UIImage? {
+        switch self {
+        case .greyhound:
+            return UIImage(named: Gallery.greyhoundRacing.rawValue)
+        case .harness:
+            return UIImage(named: Gallery.harnessRacing.rawValue)
+        case .horse:
+            return UIImage(named: Gallery.horseRacing.rawValue)
+        case .none:
+            return nil
         }
     }
 }

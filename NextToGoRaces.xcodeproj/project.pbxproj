@@ -28,6 +28,15 @@
 		89AF86022C7B7B410005D6E8 /* RaceSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86012C7B7B410005D6E8 /* RaceSummary.swift */; };
 		89AF86042C7B7B640005D6E8 /* AdvertisedStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86032C7B7B640005D6E8 /* AdvertisedStart.swift */; };
 		89AF86062C7B7BC40005D6E8 /* RaceCategoryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86052C7B7BC40005D6E8 /* RaceCategoryEnum.swift */; };
+		89AF860C2C7B7D330005D6E8 /* NextToGoRacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF860B2C7B7D330005D6E8 /* NextToGoRacesViewController.swift */; };
+		89AF860E2C7B7D550005D6E8 /* NextToGoRacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF860D2C7B7D550005D6E8 /* NextToGoRacesView.swift */; };
+		89AF86112C7B7D930005D6E8 /* RacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86102C7B7D930005D6E8 /* RacesTableViewCell.swift */; };
+		89AF86132C7B7E4B0005D6E8 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86122C7B7E4B0005D6E8 /* UITableViewCell+Extension.swift */; };
+		89AF86162C7B7E9C0005D6E8 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86152C7B7E9C0005D6E8 /* UITableView+Extension.swift */; };
+		89AF86192C7B803B0005D6E8 /* RacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86182C7B803B0005D6E8 /* RacesManager.swift */; };
+		89AF861C2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF861B2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift */; };
+		89AF861E2C7B81360005D6E8 /* RaceSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF861D2C7B81360005D6E8 /* RaceSummaryViewModel.swift */; };
+		89AF86212C7B83000005D6E8 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86202C7B83000005D6E8 /* Gallery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +82,15 @@
 		89AF86012C7B7B410005D6E8 /* RaceSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSummary.swift; sourceTree = "<group>"; };
 		89AF86032C7B7B640005D6E8 /* AdvertisedStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisedStart.swift; sourceTree = "<group>"; };
 		89AF86052C7B7BC40005D6E8 /* RaceCategoryEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCategoryEnum.swift; sourceTree = "<group>"; };
+		89AF860B2C7B7D330005D6E8 /* NextToGoRacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesViewController.swift; sourceTree = "<group>"; };
+		89AF860D2C7B7D550005D6E8 /* NextToGoRacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesView.swift; sourceTree = "<group>"; };
+		89AF86102C7B7D930005D6E8 /* RacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesTableViewCell.swift; sourceTree = "<group>"; };
+		89AF86122C7B7E4B0005D6E8 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		89AF86152C7B7E9C0005D6E8 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		89AF86182C7B803B0005D6E8 /* RacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesManager.swift; sourceTree = "<group>"; };
+		89AF861B2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesViewModel.swift; sourceTree = "<group>"; };
+		89AF861D2C7B81360005D6E8 /* RaceSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSummaryViewModel.swift; sourceTree = "<group>"; };
+		89AF86202C7B83000005D6E8 /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +141,11 @@
 		89AF85942C7B6C4E0005D6E8 /* NextToGoRaces */ = {
 			isa = PBXGroup;
 			children = (
+				89AF861F2C7B82F20005D6E8 /* Utilities */,
+				89AF861A2C7B81090005D6E8 /* ViewModels */,
+				89AF86172C7B802B0005D6E8 /* Managers */,
+				89AF86142C7B7E690005D6E8 /* Extensions */,
+				89AF860A2C7B7D230005D6E8 /* Views */,
 				89AF85FA2C7B7ACF0005D6E8 /* Services */,
 				89AF85F52C7B7A4E0005D6E8 /* Models */,
 				89AF85EC2C7B797D0005D6E8 /* Network */,
@@ -193,6 +216,58 @@
 				89AF85FD2C7B7AFD0005D6E8 /* RacesService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		89AF860A2C7B7D230005D6E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89AF860F2C7B7D890005D6E8 /* Cells */,
+				89AF860B2C7B7D330005D6E8 /* NextToGoRacesViewController.swift */,
+				89AF860D2C7B7D550005D6E8 /* NextToGoRacesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89AF860F2C7B7D890005D6E8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				89AF86102C7B7D930005D6E8 /* RacesTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		89AF86142C7B7E690005D6E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				89AF86122C7B7E4B0005D6E8 /* UITableViewCell+Extension.swift */,
+				89AF86152C7B7E9C0005D6E8 /* UITableView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		89AF86172C7B802B0005D6E8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				89AF86182C7B803B0005D6E8 /* RacesManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		89AF861A2C7B81090005D6E8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				89AF861B2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift */,
+				89AF861D2C7B81360005D6E8 /* RaceSummaryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		89AF861F2C7B82F20005D6E8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				89AF86202C7B83000005D6E8 /* Gallery.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,18 +402,27 @@
 			files = (
 				89AF85F72C7B7A580005D6E8 /* BaseResponse.swift in Sources */,
 				89AF86022C7B7B410005D6E8 /* RaceSummary.swift in Sources */,
+				89AF86162C7B7E9C0005D6E8 /* UITableView+Extension.swift in Sources */,
 				89AF86002C7B7B120005D6E8 /* Races.swift in Sources */,
+				89AF861C2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift in Sources */,
 				89AF85F42C7B7A430005D6E8 /* NetworkModel.swift in Sources */,
 				89AF85F02C7B79D70005D6E8 /* ServiceEndpointProtocol.swift in Sources */,
 				89AF85F22C7B7A1B0005D6E8 /* URLSessionService.swift in Sources */,
+				89AF860C2C7B7D330005D6E8 /* NextToGoRacesViewController.swift in Sources */,
 				89AF85962C7B6C4E0005D6E8 /* AppDelegate.swift in Sources */,
+				89AF86112C7B7D930005D6E8 /* RacesTableViewCell.swift in Sources */,
+				89AF86212C7B83000005D6E8 /* Gallery.swift in Sources */,
 				89AF85F92C7B7A8C0005D6E8 /* Configs.swift in Sources */,
 				89AF85982C7B6C4E0005D6E8 /* SceneDelegate.swift in Sources */,
+				89AF86132C7B7E4B0005D6E8 /* UITableViewCell+Extension.swift in Sources */,
 				89AF85FC2C7B7AE80005D6E8 /* RacesServiceEndpoint.swift in Sources */,
 				89AF86042C7B7B640005D6E8 /* AdvertisedStart.swift in Sources */,
 				89AF85FE2C7B7AFD0005D6E8 /* RacesService.swift in Sources */,
+				89AF86192C7B803B0005D6E8 /* RacesManager.swift in Sources */,
+				89AF861E2C7B81360005D6E8 /* RaceSummaryViewModel.swift in Sources */,
 				89AF85E92C7B78B90005D6E8 /* CoordinatorProtocol.swift in Sources */,
 				89AF85EB2C7B78D60005D6E8 /* RaceCoordinator.swift in Sources */,
+				89AF860E2C7B7D550005D6E8 /* NextToGoRacesView.swift in Sources */,
 				89AF85EE2C7B79C10005D6E8 /* NetworkServiceProtocol.swift in Sources */,
 				89AF86062C7B7BC40005D6E8 /* RaceCategoryEnum.swift in Sources */,
 			);
