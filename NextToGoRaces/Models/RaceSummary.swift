@@ -13,7 +13,7 @@ struct RaceSummary: Decodable {
     
     private var categoryId: String
     var category: RaceCategory {
-        return RaceCategory(rawValue: categoryId) ?? .none
+        return RaceCategory(rawValue: categoryId)!
     }
     
     private var advertisedStartSeconds: AdvertisedStart

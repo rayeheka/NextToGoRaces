@@ -9,8 +9,9 @@ import Foundation
 import Combine
 
 class NextToGoRacesViewModel: ObservableObject {
-    @Published var allRaces: [RaceSummaryViewModel] = []
+    @Published var filteredRaces: [RaceSummaryViewModel] = []
     
+    private var allRaces: [RaceSummaryViewModel] = []
     private var selectedCategories: Set<RaceCategory> = Set(RaceCategory.allCases)
     
     private var racesManager: RacesManagerProtocol
@@ -27,6 +28,7 @@ class NextToGoRacesViewModel: ObservableObject {
         let convertedRaces = convertRaceSummariesToViewModel(races)
         DispatchQueue.main.async { [weak self] in
             guard let self else { return }
+            self.filteredRaces = convertedRaces.applyFilter(basedOn: selectedCategories)
             self.allRaces = convertedRaces
             
             // Schedule countdown updates every second to show smooth seconds changing
@@ -58,7 +60,17 @@ class NextToGoRacesViewModel: ObservableObject {
                 }
             }
         }
-        allRaces = temp
+        filteredRaces = temp.applyFilter(basedOn: selectedCategories)
+    }
+    
+    func filter(basedOn category: RaceCategory, isSelected: Bool) {
+        if isSelected {
+            selectedCategories.insert(category)
+        } else {
+            selectedCategories.remove(category)
+        }
+        
+        filteredRaces = allRaces.applyFilter(basedOn: selectedCategories)
     }
 }
 

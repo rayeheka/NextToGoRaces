@@ -37,6 +37,10 @@
 		89AF861C2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF861B2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift */; };
 		89AF861E2C7B81360005D6E8 /* RaceSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF861D2C7B81360005D6E8 /* RaceSummaryViewModel.swift */; };
 		89AF86212C7B83000005D6E8 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86202C7B83000005D6E8 /* Gallery.swift */; };
+		89AF86232C7B85EA0005D6E8 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86222C7B85EA0005D6E8 /* FilterCollectionViewCell.swift */; };
+		89AF86252C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86242C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift */; };
+		89AF86272C7B86680005D6E8 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86262C7B86680005D6E8 /* UICollectionView+Extension.swift */; };
+		89AF86292C7B86970005D6E8 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86282C7B86970005D6E8 /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +95,10 @@
 		89AF861B2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesViewModel.swift; sourceTree = "<group>"; };
 		89AF861D2C7B81360005D6E8 /* RaceSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSummaryViewModel.swift; sourceTree = "<group>"; };
 		89AF86202C7B83000005D6E8 /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
+		89AF86222C7B85EA0005D6E8 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		89AF86242C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		89AF86262C7B86680005D6E8 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		89AF86282C7B86970005D6E8 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				89AF86102C7B7D930005D6E8 /* RacesTableViewCell.swift */,
+				89AF86222C7B85EA0005D6E8 /* FilterCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -241,6 +250,9 @@
 			children = (
 				89AF86122C7B7E4B0005D6E8 /* UITableViewCell+Extension.swift */,
 				89AF86152C7B7E9C0005D6E8 /* UITableView+Extension.swift */,
+				89AF86242C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift */,
+				89AF86262C7B86680005D6E8 /* UICollectionView+Extension.swift */,
+				89AF86282C7B86970005D6E8 /* Array+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -402,12 +414,15 @@
 			files = (
 				89AF85F72C7B7A580005D6E8 /* BaseResponse.swift in Sources */,
 				89AF86022C7B7B410005D6E8 /* RaceSummary.swift in Sources */,
+				89AF86292C7B86970005D6E8 /* Array+Extensions.swift in Sources */,
 				89AF86162C7B7E9C0005D6E8 /* UITableView+Extension.swift in Sources */,
 				89AF86002C7B7B120005D6E8 /* Races.swift in Sources */,
 				89AF861C2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift in Sources */,
 				89AF85F42C7B7A430005D6E8 /* NetworkModel.swift in Sources */,
 				89AF85F02C7B79D70005D6E8 /* ServiceEndpointProtocol.swift in Sources */,
 				89AF85F22C7B7A1B0005D6E8 /* URLSessionService.swift in Sources */,
+				89AF86272C7B86680005D6E8 /* UICollectionView+Extension.swift in Sources */,
+				89AF86252C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift in Sources */,
 				89AF860C2C7B7D330005D6E8 /* NextToGoRacesViewController.swift in Sources */,
 				89AF85962C7B6C4E0005D6E8 /* AppDelegate.swift in Sources */,
 				89AF86112C7B7D930005D6E8 /* RacesTableViewCell.swift in Sources */,
@@ -424,6 +439,7 @@
 				89AF85EB2C7B78D60005D6E8 /* RaceCoordinator.swift in Sources */,
 				89AF860E2C7B7D550005D6E8 /* NextToGoRacesView.swift in Sources */,
 				89AF85EE2C7B79C10005D6E8 /* NetworkServiceProtocol.swift in Sources */,
+				89AF86232C7B85EA0005D6E8 /* FilterCollectionViewCell.swift in Sources */,
 				89AF86062C7B7BC40005D6E8 /* RaceCategoryEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

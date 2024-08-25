@@ -38,6 +38,8 @@ class NextToGoRacesViewController: UIViewController {
         // Do any additional setup after loading the view.
         navigationController?.title = "Next To Go Races"
         
+        nextToGoRacesView.delegate = self
+        
         bindViewModel()
         
         Task {
@@ -46,11 +48,17 @@ class NextToGoRacesViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        nextToGoRacesViewModel.$allRaces
+        nextToGoRacesViewModel.$filteredRaces
             .receive(on: DispatchQueue.main)
             .sink { [weak self] races in
                 self?.nextToGoRacesView.setRaces(races)
             }
             .store(in: &cancellables)
+    }
+}
+
+extension NextToGoRacesViewController: NextToGoRacesViewDelegate {
+    func filterSelected(category: RaceCategory, isSelected: Bool) {
+        nextToGoRacesViewModel.filter(basedOn: category, isSelected: isSelected)
     }
 }
