@@ -18,6 +18,10 @@
 		89AF85EB2C7B78D60005D6E8 /* RaceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85EA2C7B78D60005D6E8 /* RaceCoordinator.swift */; };
 		89AF85EE2C7B79C10005D6E8 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85ED2C7B79C10005D6E8 /* NetworkServiceProtocol.swift */; };
 		89AF85F02C7B79D70005D6E8 /* ServiceEndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85EF2C7B79D70005D6E8 /* ServiceEndpointProtocol.swift */; };
+		89AF85F22C7B7A1B0005D6E8 /* URLSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85F12C7B7A1B0005D6E8 /* URLSessionService.swift */; };
+		89AF85F42C7B7A430005D6E8 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85F32C7B7A430005D6E8 /* NetworkModel.swift */; };
+		89AF85F72C7B7A580005D6E8 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85F62C7B7A580005D6E8 /* BaseResponse.swift */; };
+		89AF85F92C7B7A8C0005D6E8 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85F82C7B7A8C0005D6E8 /* Configs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		89AF85EA2C7B78D60005D6E8 /* RaceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCoordinator.swift; sourceTree = "<group>"; };
 		89AF85ED2C7B79C10005D6E8 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		89AF85EF2C7B79D70005D6E8 /* ServiceEndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndpointProtocol.swift; sourceTree = "<group>"; };
+		89AF85F12C7B7A1B0005D6E8 /* URLSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionService.swift; sourceTree = "<group>"; };
+		89AF85F32C7B7A430005D6E8 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		89AF85F62C7B7A580005D6E8 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		89AF85F82C7B7A8C0005D6E8 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 		89AF85942C7B6C4E0005D6E8 /* NextToGoRaces */ = {
 			isa = PBXGroup;
 			children = (
+				89AF85F52C7B7A4E0005D6E8 /* Models */,
 				89AF85EC2C7B797D0005D6E8 /* Network */,
 				89AF85E72C7B78A70005D6E8 /* Coordinator */,
 				89AF85952C7B6C4E0005D6E8 /* AppDelegate.swift */,
@@ -145,8 +154,19 @@
 			children = (
 				89AF85ED2C7B79C10005D6E8 /* NetworkServiceProtocol.swift */,
 				89AF85EF2C7B79D70005D6E8 /* ServiceEndpointProtocol.swift */,
+				89AF85F12C7B7A1B0005D6E8 /* URLSessionService.swift */,
+				89AF85F32C7B7A430005D6E8 /* NetworkModel.swift */,
+				89AF85F82C7B7A8C0005D6E8 /* Configs.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		89AF85F52C7B7A4E0005D6E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89AF85F62C7B7A580005D6E8 /* BaseResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89AF85F72C7B7A580005D6E8 /* BaseResponse.swift in Sources */,
+				89AF85F42C7B7A430005D6E8 /* NetworkModel.swift in Sources */,
 				89AF85F02C7B79D70005D6E8 /* ServiceEndpointProtocol.swift in Sources */,
+				89AF85F22C7B7A1B0005D6E8 /* URLSessionService.swift in Sources */,
 				89AF85962C7B6C4E0005D6E8 /* AppDelegate.swift in Sources */,
+				89AF85F92C7B7A8C0005D6E8 /* Configs.swift in Sources */,
 				89AF85982C7B6C4E0005D6E8 /* SceneDelegate.swift in Sources */,
 				89AF85E92C7B78B90005D6E8 /* CoordinatorProtocol.swift in Sources */,
 				89AF85EB2C7B78D60005D6E8 /* RaceCoordinator.swift in Sources */,
