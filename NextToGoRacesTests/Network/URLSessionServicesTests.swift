@@ -39,7 +39,7 @@ class URLSessionServiceTests: XCTestCase {
     
     func testRequest_throwsDecodingError() async {
         //Given
-        mockURLSession.mockData = Data() // Invalid data
+        mockURLSession.mockData = Data() // Invalid data for decoding
         
         do {
             // When
@@ -51,6 +51,25 @@ class URLSessionServiceTests: XCTestCase {
         } catch {
             // Then
             XCTFail("Unexpected error: \(error)")
+        }
+    }
+}
+
+extension NetworkError: Equatable {
+    public static func == (lhs: NetworkError, rhs: NetworkError) -> Bool {
+        switch (lhs, rhs) {
+        case (.invalidURL, .invalidURL):
+            return true
+        case (.serverError(let lhsCode), .serverError(let rhsCode)):
+            return lhsCode == rhsCode
+        case (.decodingError, .decodingError):
+            return true
+        case (.networkFailure(let lhsError as NetworkError), .networkFailure(let rhsError as NetworkError)):
+            return lhsError == rhsError
+        case (.networkFailure(let lhsError), .networkFailure(let rhsError)):
+            return lhsError.localizedDescription == rhsError.localizedDescription
+        default:
+            return false
         }
     }
 }

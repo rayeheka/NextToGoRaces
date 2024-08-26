@@ -11,7 +11,7 @@ import Combine
 class NextToGoRacesViewModel: ObservableObject {
     @Published var filteredRaces: [RaceSummaryViewModel] = []
     
-    private var allRaces: [RaceSummaryViewModel] = []
+    var allRaces: [RaceSummaryViewModel] = []
     private var selectedCategories: Set<RaceCategory> = Set(RaceCategory.allCases)
     
     private var racesManager: RacesManagerProtocol
