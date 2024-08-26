@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		898DB7D92C7C29D100042BDE /* RacesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DB7D82C7C29D100042BDE /* RacesServiceTests.swift */; };
+		898DB7DB2C7C29FB00042BDE /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DB7DA2C7C29FB00042BDE /* MockNetworkService.swift */; };
 		89AF85962C7B6C4E0005D6E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85952C7B6C4E0005D6E8 /* AppDelegate.swift */; };
 		89AF85982C7B6C4E0005D6E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85972C7B6C4E0005D6E8 /* SceneDelegate.swift */; };
 		89AF859F2C7B6C500005D6E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AF859E2C7B6C500005D6E8 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		898DB7D82C7C29D100042BDE /* RacesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesServiceTests.swift; sourceTree = "<group>"; };
+		898DB7DA2C7C29FB00042BDE /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 		89AF85922C7B6C4E0005D6E8 /* NextToGoRaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextToGoRaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AF85952C7B6C4E0005D6E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89AF85972C7B6C4E0005D6E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		898DB7D72C7C29C200042BDE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				898DB7D82C7C29D100042BDE /* RacesServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		89AF85892C7B6C4E0005D6E8 = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +184,7 @@
 		89AF85AB2C7B6C500005D6E8 /* NextToGoRacesTests */ = {
 			isa = PBXGroup;
 			children = (
+				898DB7D72C7C29C200042BDE /* Services */,
 				89AF862D2C7C1FF20005D6E8 /* Mocks */,
 				89AF862C2C7C1FC40005D6E8 /* Managers */,
 			);
@@ -297,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				89AF862E2C7C20060005D6E8 /* MockRacesService.swift */,
+				898DB7DA2C7C29FB00042BDE /* MockNetworkService.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -468,8 +482,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				898DB7DB2C7C29FB00042BDE /* MockNetworkService.swift in Sources */,
 				89AF862F2C7C20060005D6E8 /* MockRacesService.swift in Sources */,
 				89AF862B2C7C1FB90005D6E8 /* RacesManagerTests.swift in Sources */,
+				898DB7D92C7C29D100042BDE /* RacesServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
