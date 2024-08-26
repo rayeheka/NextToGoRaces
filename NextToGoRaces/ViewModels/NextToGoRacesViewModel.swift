@@ -23,19 +23,17 @@ class NextToGoRacesViewModel: ObservableObject {
         self.racesManager = racesManager
     }
     
+    @MainActor
     func getRaces() async {
         let races = await racesManager.fetchRaces()
         let convertedRaces = convertRaceSummariesToViewModel(races)
-        DispatchQueue.main.async { [weak self] in
+        filteredRaces = convertedRaces.applyFilter(basedOn: selectedCategories)
+        allRaces = convertedRaces
+        
+        // Schedule countdown updates every second to show smooth seconds changing
+        countdownTimer = Timer.scheduledTimer(withTimeInterval: self.countdownInterval, repeats: true) { [weak self] _ in
             guard let self else { return }
-            self.filteredRaces = convertedRaces.applyFilter(basedOn: selectedCategories)
-            self.allRaces = convertedRaces
-            
-            // Schedule countdown updates every second to show smooth seconds changing
-            self.countdownTimer = Timer.scheduledTimer(withTimeInterval: self.countdownInterval, repeats: true) { [weak self] _ in
-                guard let self else { return }
-                self.updateCountdowns()
-            }
+            self.updateCountdowns()
         }
     }
     
