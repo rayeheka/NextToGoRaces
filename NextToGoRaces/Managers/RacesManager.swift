@@ -11,19 +11,27 @@ protocol RacesManagerProtocol {
     func fetchRaces() async -> [RaceSummary]
 }
 
+/// RacesManager handles all functionalities which is related to the races.
 class RacesManager: RacesManagerProtocol {
+    //MARK: - Properties
     private var numberOfRacesToFetch: Int
     private var numberOfRacesToShow: Int
     private var racesService: RacesServiceProtocol
  
     private var latestRaces: [RaceSummary] = []
     
+    //MARK: - Init
     init(racesService: RacesServiceProtocol, numberOfRacesToFetch: Int, numberOfRacesToShow: Int) {
         self.racesService = racesService
         self.numberOfRacesToFetch = numberOfRacesToFetch
         self.numberOfRacesToShow = numberOfRacesToShow
     }
     
+    //MARK: - Methods
+    
+    ///This method fetches races by providing data from Races Serice.
+    ///
+    /// - Returns: Array of Race Summary.
     func fetchRaces() async -> [RaceSummary] {
         guard let races = await racesService.getNextRaces(numberOfNextRaces: numberOfRacesToFetch) else { return [] }
         let latestSortedRaces = getLatestRaces(races, numberOfRacesToShow: numberOfRacesToShow)

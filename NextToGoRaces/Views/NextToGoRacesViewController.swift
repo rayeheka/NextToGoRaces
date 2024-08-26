@@ -10,6 +10,7 @@ import UIKit
 import Combine
 
 class NextToGoRacesViewController: UIViewController {
+    //MARK: - Properties
     weak var coordinator: CoordinatorProtocol?
        
     private let nextToGoRacesViewModel: NextToGoRacesViewModel
@@ -19,6 +20,7 @@ class NextToGoRacesViewController: UIViewController {
         return view as! NextToGoRacesView
     }
     
+    //MARk: - Init
     init(nextToGoRacesViewModel: NextToGoRacesViewModel) {
         self.nextToGoRacesViewModel = nextToGoRacesViewModel
         super.init(nibName: nil, bundle: nil)
@@ -28,6 +30,7 @@ class NextToGoRacesViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Methods
     override func loadView() {
         super.loadView()
         view = NextToGoRacesView()
@@ -35,7 +38,6 @@ class NextToGoRacesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         navigationController?.title = "Next To Go Races"
         
         nextToGoRacesView.delegate = self
@@ -57,6 +59,7 @@ class NextToGoRacesViewController: UIViewController {
     }
 }
 
+//MARK: - NextToGoRacesViewDelegate
 extension NextToGoRacesViewController: NextToGoRacesViewDelegate {
     func filterSelected(category: RaceCategory, isSelected: Bool) {
         nextToGoRacesViewModel.filter(basedOn: category, isSelected: isSelected)

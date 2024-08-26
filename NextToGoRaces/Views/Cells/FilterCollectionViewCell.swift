@@ -9,6 +9,12 @@ import Foundation
 import UIKit
 
 class FilterCollectionViewCell: UICollectionViewCell {
+    //MARK: - Properties
+    override var isSelected: Bool {
+        didSet {
+            borderView.isHidden = !isSelected
+        }
+    }
     
     private lazy var iconImageView: UIImageView = {
         let imageView = UIImageView()
@@ -25,12 +31,7 @@ class FilterCollectionViewCell: UICollectionViewCell {
         return view
     }()
 
-    override var isSelected: Bool {
-        didSet {
-            borderView.isHidden = !isSelected
-        }
-    }
-    
+    //MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -54,6 +55,7 @@ class FilterCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
+    //MARK: - Methods
     func fillData(category: RaceCategory) {
         iconImageView.image = category.image
     }

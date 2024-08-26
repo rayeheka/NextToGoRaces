@@ -13,6 +13,7 @@ protocol NextToGoRacesViewDelegate: AnyObject {
 }
 
 class NextToGoRacesView: UIView {
+    //MARK: - Properties
     var races: [RaceSummaryViewModel] = []
     
     weak var delegate: NextToGoRacesViewDelegate?
@@ -44,6 +45,7 @@ class NextToGoRacesView: UIView {
         return tableView
     }()
     
+    //MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupSubviews()
@@ -52,6 +54,12 @@ class NextToGoRacesView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupSubviews()
+    }
+    
+    //MARK: - Methods
+    func setRaces(_ races: [RaceSummaryViewModel]) {
+        self.races = races
+        racesTableView.reloadData()
     }
     
     private func setupSubviews() {
@@ -79,13 +87,9 @@ class NextToGoRacesView: UIView {
             racesTableView.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor)
         ])
     }
-    
-    func setRaces(_ races: [RaceSummaryViewModel]) {
-        self.races = races
-        racesTableView.reloadData()
-    }
 }
 
+//MARK: - UITableViewDelegate and UITableViewDataSource
 extension NextToGoRacesView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return races.count
@@ -98,6 +102,7 @@ extension NextToGoRacesView: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+//MARK: - UICollectionViewDelegate and UICollectionViewDataSource
 extension NextToGoRacesView: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return RaceCategory.allCases.count

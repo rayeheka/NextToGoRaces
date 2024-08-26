@@ -14,6 +14,11 @@ protocol URLSessionProtocol {
 struct URLSessionService: NetworkServiceProtocol {
     var urlSession: URLSessionProtocol = URLSession.shared
     
+    /// Sends a network request to the specified endpoint and decodes the response into the expected type.
+    ///
+    /// - Parameter endpoint: An object conforming to `ServiceEndpointProtocol` that provides the endpoint details.
+    /// - Returns: The decoded response data of the specified type.
+    /// - Throws: A `NetworkError` if the request fails, the URL is invalid, or the decoding process encounters an error.
     func request<T: Codable>(endpoint: ServiceEndpointProtocol) async throws -> T {
         guard let urlRequest = createUrlRequest(endpoint: endpoint) else {
             throw NetworkError.invalidURL

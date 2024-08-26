@@ -11,6 +11,8 @@ protocol RacesServiceProtocol {
     func getNextRaces(numberOfNextRaces: Int) async -> Races?
 }
 
+/// The `RacesService` is responsible for managing and fetching race data from the network.
+/// It interacts with a network service to retrieve races data
 class RacesService: RacesServiceProtocol {
     private var networkService: NetworkServiceProtocol
     
@@ -18,6 +20,10 @@ class RacesService: RacesServiceProtocol {
         self.networkService = networkService
     }
     
+    /// Fetches the latest races from the network
+    ///
+    /// Parameter numberOfNextRaces: number of races to be fetched from server
+    /// Returns: Races model
     func getNextRaces(numberOfNextRaces: Int) async -> Races? {
         do {
             let endpointToCall = getRacesServiceEndpoint(numberOfNextRaces: numberOfNextRaces)

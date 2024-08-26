@@ -8,10 +8,16 @@
 import Foundation
 import Combine
 
+/// A viewModel as a base for preparing list of races
+/// Can be used separately for the simplest use.
+/// RacesManager should be provided to get the list.
+/// Handles fetching data, counting down timer and filter races by category.
 class NextToGoRacesViewModel: ObservableObject {
+    //MARK: - Properties
     @Published var filteredRaces: [RaceSummaryViewModel] = []
     
     var allRaces: [RaceSummaryViewModel] = []
+    
     private var selectedCategories: Set<RaceCategory> = Set(RaceCategory.allCases)
     
     private var racesManager: RacesManagerProtocol
@@ -19,10 +25,14 @@ class NextToGoRacesViewModel: ObservableObject {
     private var countdownTimer: Timer?
     private let countdownInterval: TimeInterval = 1
     
+    //MARK: - Init
     init(racesManager: RacesManagerProtocol) {
         self.racesManager = racesManager
     }
     
+    //MARK: - Methods
+    
+    /// This function fetches latest races.
     @MainActor
     func getRaces() async {
         let races = await racesManager.fetchRaces()
@@ -30,11 +40,26 @@ class NextToGoRacesViewModel: ObservableObject {
         filteredRaces = convertedRaces.applyFilter(basedOn: selectedCategories)
         allRaces = convertedRaces
         
-        // Schedule countdown updates every second to show smooth seconds changing
+        // Schedule countdown updates every `countdownInterval` seconds to show smooth seconds changing
         countdownTimer = Timer.scheduledTimer(withTimeInterval: self.countdownInterval, repeats: true) { [weak self] _ in
             guard let self else { return }
             self.updateCountdowns()
         }
+    }
+    
+    /// This function filters races based on category.
+    ///
+    /// - Parameters:
+    ///     - category: category based on which data is filtered.
+    ///     - isSelected: a Boolean to show filter is selected/deselected.
+    func filter(basedOn category: RaceCategory, isSelected: Bool) {
+        if isSelected {
+            selectedCategories.insert(category)
+        } else {
+            selectedCategories.remove(category)
+        }
+        
+        filteredRaces = allRaces.applyFilter(basedOn: selectedCategories)
     }
     
     private func convertRaceSummariesToViewModel(_ races: [RaceSummary]) -> [RaceSummaryViewModel] {
@@ -50,6 +75,7 @@ class NextToGoRacesViewModel: ObservableObject {
             let timeRemaining = race.advertisedStartDate.timeIntervalSince(currentTime)
             race.advertisedStart = timeRemaining
             temp.append(race)
+            //check if any race past 1 minute of its start time
             if timeRemaining < -60.0 {
                 countdownTimer?.invalidate()
                 Task {
@@ -59,16 +85,6 @@ class NextToGoRacesViewModel: ObservableObject {
             }
         }
         filteredRaces = temp.applyFilter(basedOn: selectedCategories)
-    }
-    
-    func filter(basedOn category: RaceCategory, isSelected: Bool) {
-        if isSelected {
-            selectedCategories.insert(category)
-        } else {
-            selectedCategories.remove(category)
-        }
-        
-        filteredRaces = allRaces.applyFilter(basedOn: selectedCategories)
     }
 }
 

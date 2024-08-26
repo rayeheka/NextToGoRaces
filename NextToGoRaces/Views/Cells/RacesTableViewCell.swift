@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class RacesTableViewCell: UITableViewCell {
+    //MARK: - Properties
     private lazy var iconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -53,6 +54,7 @@ class RacesTableViewCell: UITableViewCell {
         return label
     }()
     
+    //MARK: - Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubViews()
@@ -66,12 +68,20 @@ class RacesTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Methods
     override func prepareForReuse() {
         super.prepareForReuse()
         titleLabel.text = nil
         raceNumberImageView.image = nil
         iconImageView.image = nil
         timerLabel.text = nil
+    }
+    
+    func fillData(raceSummary: RaceSummaryViewModel) {
+        titleLabel.text = raceSummary.meetingName
+        raceNumberImageView.image = UIImage(systemName: "\(raceSummary.raceNumber).circle.fill")
+        timerLabel.text = "\(Int(raceSummary.advertisedStart)) seconds"
+        iconImageView.image = raceSummary.category.image
     }
     
     private func addSubViews() {
@@ -106,13 +116,6 @@ class RacesTableViewCell: UITableViewCell {
             timerLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             timerLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24)
         ])
-    }
-    
-    func fillData(raceSummary: RaceSummaryViewModel) {
-        titleLabel.text = raceSummary.meetingName
-        raceNumberImageView.image = UIImage(systemName: "\(raceSummary.raceNumber).circle.fill")
-        timerLabel.text = "\(Int(raceSummary.advertisedStart)) seconds"
-        iconImageView.image = raceSummary.category.image
     }
 }
 
