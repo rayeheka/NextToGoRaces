@@ -25,11 +25,11 @@ This project is built using the **MVVM** architecture, which promotes a clean se
 
 ## Unit Testing
 
-Unit tests are implemented for various components.
+Unit tests are implemented for various components with a code coverage of 88%.
 
 These tests cover:
 - Data fetching and parsing.
-- Race sorting and filtering.
+- Race sorting and filtering logic.
 
 ## Contact
 This project is developed by Rayeheh Karimanipour for a purpose of technical task.
