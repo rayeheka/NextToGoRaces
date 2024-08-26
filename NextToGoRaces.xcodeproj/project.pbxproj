@@ -11,7 +11,6 @@
 		89AF85982C7B6C4E0005D6E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85972C7B6C4E0005D6E8 /* SceneDelegate.swift */; };
 		89AF859F2C7B6C500005D6E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AF859E2C7B6C500005D6E8 /* Assets.xcassets */; };
 		89AF85A22C7B6C500005D6E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AF85A02C7B6C500005D6E8 /* LaunchScreen.storyboard */; };
-		89AF85AD2C7B6C500005D6E8 /* NextToGoRacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85AC2C7B6C500005D6E8 /* NextToGoRacesTests.swift */; };
 		89AF85B72C7B6C500005D6E8 /* NextToGoRacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85B62C7B6C500005D6E8 /* NextToGoRacesUITests.swift */; };
 		89AF85B92C7B6C500005D6E8 /* NextToGoRacesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85B82C7B6C500005D6E8 /* NextToGoRacesUITestsLaunchTests.swift */; };
 		89AF85E92C7B78B90005D6E8 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85E82C7B78B90005D6E8 /* CoordinatorProtocol.swift */; };
@@ -41,6 +40,8 @@
 		89AF86252C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86242C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift */; };
 		89AF86272C7B86680005D6E8 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86262C7B86680005D6E8 /* UICollectionView+Extension.swift */; };
 		89AF86292C7B86970005D6E8 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86282C7B86970005D6E8 /* Array+Extensions.swift */; };
+		89AF862B2C7C1FB90005D6E8 /* RacesManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF862A2C7C1FB90005D6E8 /* RacesManagerTests.swift */; };
+		89AF862F2C7C20060005D6E8 /* MockRacesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF862E2C7C20060005D6E8 /* MockRacesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +69,6 @@
 		89AF85A12C7B6C500005D6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89AF85A32C7B6C500005D6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89AF85A82C7B6C500005D6E8 /* NextToGoRacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextToGoRacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89AF85AC2C7B6C500005D6E8 /* NextToGoRacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesTests.swift; sourceTree = "<group>"; };
 		89AF85B22C7B6C500005D6E8 /* NextToGoRacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextToGoRacesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AF85B62C7B6C500005D6E8 /* NextToGoRacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesUITests.swift; sourceTree = "<group>"; };
 		89AF85B82C7B6C500005D6E8 /* NextToGoRacesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -99,6 +99,8 @@
 		89AF86242C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		89AF86262C7B86680005D6E8 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		89AF86282C7B86970005D6E8 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		89AF862A2C7C1FB90005D6E8 /* RacesManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesManagerTests.swift; sourceTree = "<group>"; };
+		89AF862E2C7C20060005D6E8 /* MockRacesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRacesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +172,8 @@
 		89AF85AB2C7B6C500005D6E8 /* NextToGoRacesTests */ = {
 			isa = PBXGroup;
 			children = (
-				89AF85AC2C7B6C500005D6E8 /* NextToGoRacesTests.swift */,
+				89AF862D2C7C1FF20005D6E8 /* Mocks */,
+				89AF862C2C7C1FC40005D6E8 /* Managers */,
 			);
 			path = NextToGoRacesTests;
 			sourceTree = "<group>";
@@ -282,6 +285,22 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		89AF862C2C7C1FC40005D6E8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				89AF862A2C7C1FB90005D6E8 /* RacesManagerTests.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		89AF862D2C7C1FF20005D6E8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				89AF862E2C7C20060005D6E8 /* MockRacesService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,6 +372,7 @@
 					};
 					89AF85A72C7B6C500005D6E8 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 						TestTargetID = 89AF85912C7B6C4E0005D6E8;
 					};
 					89AF85B12C7B6C500005D6E8 = {
@@ -448,7 +468,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89AF85AD2C7B6C500005D6E8 /* NextToGoRacesTests.swift in Sources */,
+				89AF862F2C7C20060005D6E8 /* MockRacesService.swift in Sources */,
+				89AF862B2C7C1FB90005D6E8 /* RacesManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +687,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -674,6 +696,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.NextToGoRacesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextToGoRaces.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NextToGoRaces";
@@ -685,6 +708,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

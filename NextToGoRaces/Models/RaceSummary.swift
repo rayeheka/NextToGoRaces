@@ -27,4 +27,11 @@ struct RaceSummary: Decodable {
         case advertisedStartSeconds = "advertised_start"
         case categoryId = "category_id"
     }
+    
+    init(raceNumber: Int, meetingName: String, categoryId: String, advertisedStartSeconds: AdvertisedStart) {
+        self.raceNumber = raceNumber
+        self.meetingName = meetingName
+        self.categoryId = categoryId
+        self.advertisedStartSeconds = advertisedStartSeconds
+    }
 }
