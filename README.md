@@ -8,6 +8,7 @@ This project is an iOS application that displays upcoming races with detailed su
 - **Filter Races**: Filter shown races based on selected categories, helping user filter races to the desired ones.
 - **Real-Time Countdown**: Live countdowns to each race start time, ensuring a smooth user experience.
 - **API Integration**: Fetches race data from a backend service, including race summaries and next-to-go race IDs.
+- **Scalable Layout**: Provides scalable layout so that by changing accessibility on text size and bold, UI updates.
 
 ## Architecture
 
@@ -18,6 +19,9 @@ This project is built using the **MVVM** architecture, which promotes a clean se
 - **ViewModel**: Manages the state and business logic, interacting with the Model and updating the View.
 - **Coordinator Pattern**: Manages navigation and flow between view controllers.
 - **Dependency Injection**: Injects dependencies like network services into view models and other classes.
+
+## Additional Improvements
+- **Custom Decodable**: Custom decodable is written for decoding Races Summary.
 
 ## Unit Testing
 
