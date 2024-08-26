@@ -14,7 +14,7 @@ protocol URLSessionProtocol {
 struct URLSessionService: NetworkServiceProtocol {
     var urlSession: URLSessionProtocol = URLSession.shared
     
-    func request<T: Decodable>(endpoint: ServiceEndpointProtocol) async throws -> T {
+    func request<T: Codable>(endpoint: ServiceEndpointProtocol) async throws -> T {
         guard let urlRequest = createUrlRequest(endpoint: endpoint) else {
             throw NetworkError.invalidURL
         }

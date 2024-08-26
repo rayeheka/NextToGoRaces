@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Races: Decodable {
+struct Races: Codable {
     var nextToGoIds: [String]
     var raceSummaries: [String: RaceSummary]
     

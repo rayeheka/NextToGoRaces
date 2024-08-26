@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RaceSummary: Decodable {
+struct RaceSummary: Codable {
     var raceNumber: Int
     var meetingName: String
     

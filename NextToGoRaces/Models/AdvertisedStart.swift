@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct AdvertisedStart: Decodable {
+struct AdvertisedStart: Codable {
     var seconds: Int
 }

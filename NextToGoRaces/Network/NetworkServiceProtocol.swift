@@ -8,5 +8,5 @@
 import Foundation
 
 protocol NetworkServiceProtocol {
-    func request<T: Decodable>(endpoint: any ServiceEndpointProtocol) async throws -> T
+    func request<T: Codable>(endpoint: any ServiceEndpointProtocol) async throws -> T
 }
