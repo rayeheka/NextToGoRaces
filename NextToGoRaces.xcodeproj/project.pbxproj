@@ -33,16 +33,12 @@
 		89AF86002C7B7B120005D6E8 /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85FF2C7B7B120005D6E8 /* Races.swift */; };
 		89AF86022C7B7B410005D6E8 /* RaceSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86012C7B7B410005D6E8 /* RaceSummary.swift */; };
 		89AF86062C7B7BC40005D6E8 /* RaceCategoryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86052C7B7BC40005D6E8 /* RaceCategoryEnum.swift */; };
-		89AF860C2C7B7D330005D6E8 /* NextToGoRacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF860B2C7B7D330005D6E8 /* NextToGoRacesViewController.swift */; };
-		89AF860E2C7B7D550005D6E8 /* NextToGoRacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF860D2C7B7D550005D6E8 /* NextToGoRacesView.swift */; };
-		89AF86112C7B7D930005D6E8 /* RacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86102C7B7D930005D6E8 /* RacesTableViewCell.swift */; };
 		89AF86132C7B7E4B0005D6E8 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86122C7B7E4B0005D6E8 /* UITableViewCell+Extension.swift */; };
 		89AF86162C7B7E9C0005D6E8 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86152C7B7E9C0005D6E8 /* UITableView+Extension.swift */; };
 		89AF86192C7B803B0005D6E8 /* RacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86182C7B803B0005D6E8 /* RacesManager.swift */; };
 		89AF861C2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF861B2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift */; };
 		89AF861E2C7B81360005D6E8 /* RaceSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF861D2C7B81360005D6E8 /* RaceSummaryViewModel.swift */; };
 		89AF86212C7B83000005D6E8 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86202C7B83000005D6E8 /* Gallery.swift */; };
-		89AF86232C7B85EA0005D6E8 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86222C7B85EA0005D6E8 /* FilterCollectionViewCell.swift */; };
 		89AF86252C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86242C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift */; };
 		89AF86272C7B86680005D6E8 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86262C7B86680005D6E8 /* UICollectionView+Extension.swift */; };
 		89AF86292C7B86970005D6E8 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86282C7B86970005D6E8 /* Array+Extensions.swift */; };
@@ -98,16 +94,12 @@
 		89AF85FF2C7B7B120005D6E8 /* Races.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Races.swift; sourceTree = "<group>"; };
 		89AF86012C7B7B410005D6E8 /* RaceSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSummary.swift; sourceTree = "<group>"; };
 		89AF86052C7B7BC40005D6E8 /* RaceCategoryEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCategoryEnum.swift; sourceTree = "<group>"; };
-		89AF860B2C7B7D330005D6E8 /* NextToGoRacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesViewController.swift; sourceTree = "<group>"; };
-		89AF860D2C7B7D550005D6E8 /* NextToGoRacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesView.swift; sourceTree = "<group>"; };
-		89AF86102C7B7D930005D6E8 /* RacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesTableViewCell.swift; sourceTree = "<group>"; };
 		89AF86122C7B7E4B0005D6E8 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		89AF86152C7B7E9C0005D6E8 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		89AF86182C7B803B0005D6E8 /* RacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesManager.swift; sourceTree = "<group>"; };
 		89AF861B2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesViewModel.swift; sourceTree = "<group>"; };
 		89AF861D2C7B81360005D6E8 /* RaceSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSummaryViewModel.swift; sourceTree = "<group>"; };
 		89AF86202C7B83000005D6E8 /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
-		89AF86222C7B85EA0005D6E8 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		89AF86242C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		89AF86262C7B86680005D6E8 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		89AF86282C7B86970005D6E8 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
@@ -191,7 +183,6 @@
 				89AF861A2C7B81090005D6E8 /* ViewModels */,
 				89AF86172C7B802B0005D6E8 /* Managers */,
 				89AF86142C7B7E690005D6E8 /* Extensions */,
-				89AF860A2C7B7D230005D6E8 /* Views */,
 				89AF85FA2C7B7ACF0005D6E8 /* Services */,
 				89AF85F52C7B7A4E0005D6E8 /* Models */,
 				89AF85EC2C7B797D0005D6E8 /* Network */,
@@ -265,25 +256,6 @@
 				89AF85FD2C7B7AFD0005D6E8 /* RacesService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		89AF860A2C7B7D230005D6E8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				89AF860F2C7B7D890005D6E8 /* Cells */,
-				89AF860B2C7B7D330005D6E8 /* NextToGoRacesViewController.swift */,
-				89AF860D2C7B7D550005D6E8 /* NextToGoRacesView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		89AF860F2C7B7D890005D6E8 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				89AF86102C7B7D930005D6E8 /* RacesTableViewCell.swift */,
-				89AF86222C7B85EA0005D6E8 /* FilterCollectionViewCell.swift */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		89AF86142C7B7E690005D6E8 /* Extensions */ = {
@@ -485,9 +457,7 @@
 				89AF85F22C7B7A1B0005D6E8 /* URLSessionService.swift in Sources */,
 				89AF86272C7B86680005D6E8 /* UICollectionView+Extension.swift in Sources */,
 				89AF86252C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift in Sources */,
-				89AF860C2C7B7D330005D6E8 /* NextToGoRacesViewController.swift in Sources */,
 				89AF85962C7B6C4E0005D6E8 /* AppDelegate.swift in Sources */,
-				89AF86112C7B7D930005D6E8 /* RacesTableViewCell.swift in Sources */,
 				89AF86212C7B83000005D6E8 /* Gallery.swift in Sources */,
 				89AF85F92C7B7A8C0005D6E8 /* Configs.swift in Sources */,
 				89AF85982C7B6C4E0005D6E8 /* SceneDelegate.swift in Sources */,
@@ -498,9 +468,7 @@
 				89AF861E2C7B81360005D6E8 /* RaceSummaryViewModel.swift in Sources */,
 				89AF85E92C7B78B90005D6E8 /* CoordinatorProtocol.swift in Sources */,
 				89AF85EB2C7B78D60005D6E8 /* RaceCoordinator.swift in Sources */,
-				89AF860E2C7B7D550005D6E8 /* NextToGoRacesView.swift in Sources */,
 				89AF85EE2C7B79C10005D6E8 /* NetworkServiceProtocol.swift in Sources */,
-				89AF86232C7B85EA0005D6E8 /* FilterCollectionViewCell.swift in Sources */,
 				89AF86062C7B7BC40005D6E8 /* RaceCategoryEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
