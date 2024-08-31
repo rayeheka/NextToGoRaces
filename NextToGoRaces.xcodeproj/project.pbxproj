@@ -14,14 +14,9 @@
 		898DB7E22C7C2F8700042BDE /* MockServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DB7E12C7C2F8700042BDE /* MockServiceEndpoint.swift */; };
 		898DB7E42C7C36A300042BDE /* MockRacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DB7E32C7C36A200042BDE /* MockRacesManager.swift */; };
 		898DB7E72C7C36D800042BDE /* NextToGoRacesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DB7E62C7C36D800042BDE /* NextToGoRacesViewModelTests.swift */; };
-		89AF85962C7B6C4E0005D6E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85952C7B6C4E0005D6E8 /* AppDelegate.swift */; };
-		89AF85982C7B6C4E0005D6E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85972C7B6C4E0005D6E8 /* SceneDelegate.swift */; };
 		89AF859F2C7B6C500005D6E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AF859E2C7B6C500005D6E8 /* Assets.xcassets */; };
-		89AF85A22C7B6C500005D6E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AF85A02C7B6C500005D6E8 /* LaunchScreen.storyboard */; };
 		89AF85B72C7B6C500005D6E8 /* NextToGoRacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85B62C7B6C500005D6E8 /* NextToGoRacesUITests.swift */; };
 		89AF85B92C7B6C500005D6E8 /* NextToGoRacesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85B82C7B6C500005D6E8 /* NextToGoRacesUITestsLaunchTests.swift */; };
-		89AF85E92C7B78B90005D6E8 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85E82C7B78B90005D6E8 /* CoordinatorProtocol.swift */; };
-		89AF85EB2C7B78D60005D6E8 /* RaceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85EA2C7B78D60005D6E8 /* RaceCoordinator.swift */; };
 		89AF85EE2C7B79C10005D6E8 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85ED2C7B79C10005D6E8 /* NetworkServiceProtocol.swift */; };
 		89AF85F02C7B79D70005D6E8 /* ServiceEndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85EF2C7B79D70005D6E8 /* ServiceEndpointProtocol.swift */; };
 		89AF85F22C7B7A1B0005D6E8 /* URLSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85F12C7B7A1B0005D6E8 /* URLSessionService.swift */; };
@@ -72,17 +67,12 @@
 		898DB7E32C7C36A200042BDE /* MockRacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRacesManager.swift; sourceTree = "<group>"; };
 		898DB7E62C7C36D800042BDE /* NextToGoRacesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesViewModelTests.swift; sourceTree = "<group>"; };
 		89AF85922C7B6C4E0005D6E8 /* NextToGoRaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextToGoRaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		89AF85952C7B6C4E0005D6E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89AF85972C7B6C4E0005D6E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		89AF859E2C7B6C500005D6E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		89AF85A12C7B6C500005D6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89AF85A32C7B6C500005D6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89AF85A82C7B6C500005D6E8 /* NextToGoRacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextToGoRacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AF85B22C7B6C500005D6E8 /* NextToGoRacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextToGoRacesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AF85B62C7B6C500005D6E8 /* NextToGoRacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesUITests.swift; sourceTree = "<group>"; };
 		89AF85B82C7B6C500005D6E8 /* NextToGoRacesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		89AF85E82C7B78B90005D6E8 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		89AF85EA2C7B78D60005D6E8 /* RaceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCoordinator.swift; sourceTree = "<group>"; };
 		89AF85ED2C7B79C10005D6E8 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		89AF85EF2C7B79D70005D6E8 /* ServiceEndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndpointProtocol.swift; sourceTree = "<group>"; };
 		89AF85F12C7B7A1B0005D6E8 /* URLSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionService.swift; sourceTree = "<group>"; };
@@ -186,11 +176,7 @@
 				89AF85FA2C7B7ACF0005D6E8 /* Services */,
 				89AF85F52C7B7A4E0005D6E8 /* Models */,
 				89AF85EC2C7B797D0005D6E8 /* Network */,
-				89AF85E72C7B78A70005D6E8 /* Coordinator */,
-				89AF85952C7B6C4E0005D6E8 /* AppDelegate.swift */,
-				89AF85972C7B6C4E0005D6E8 /* SceneDelegate.swift */,
 				89AF859E2C7B6C500005D6E8 /* Assets.xcassets */,
-				89AF85A02C7B6C500005D6E8 /* LaunchScreen.storyboard */,
 				89AF85A32C7B6C500005D6E8 /* Info.plist */,
 			);
 			path = NextToGoRaces;
@@ -215,15 +201,6 @@
 				89AF85B82C7B6C500005D6E8 /* NextToGoRacesUITestsLaunchTests.swift */,
 			);
 			path = NextToGoRacesUITests;
-			sourceTree = "<group>";
-		};
-		89AF85E72C7B78A70005D6E8 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				89AF85E82C7B78B90005D6E8 /* CoordinatorProtocol.swift */,
-				89AF85EA2C7B78D60005D6E8 /* RaceCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		89AF85EC2C7B797D0005D6E8 /* Network */ = {
@@ -420,7 +397,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89AF85A22C7B6C500005D6E8 /* LaunchScreen.storyboard in Resources */,
 				89AF859F2C7B6C500005D6E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,17 +433,13 @@
 				89AF85F22C7B7A1B0005D6E8 /* URLSessionService.swift in Sources */,
 				89AF86272C7B86680005D6E8 /* UICollectionView+Extension.swift in Sources */,
 				89AF86252C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift in Sources */,
-				89AF85962C7B6C4E0005D6E8 /* AppDelegate.swift in Sources */,
 				89AF86212C7B83000005D6E8 /* Gallery.swift in Sources */,
 				89AF85F92C7B7A8C0005D6E8 /* Configs.swift in Sources */,
-				89AF85982C7B6C4E0005D6E8 /* SceneDelegate.swift in Sources */,
 				89AF86132C7B7E4B0005D6E8 /* UITableViewCell+Extension.swift in Sources */,
 				89AF85FC2C7B7AE80005D6E8 /* RacesServiceEndpoint.swift in Sources */,
 				89AF85FE2C7B7AFD0005D6E8 /* RacesService.swift in Sources */,
 				89AF86192C7B803B0005D6E8 /* RacesManager.swift in Sources */,
 				89AF861E2C7B81360005D6E8 /* RaceSummaryViewModel.swift in Sources */,
-				89AF85E92C7B78B90005D6E8 /* CoordinatorProtocol.swift in Sources */,
-				89AF85EB2C7B78D60005D6E8 /* RaceCoordinator.swift in Sources */,
 				89AF85EE2C7B79C10005D6E8 /* NetworkServiceProtocol.swift in Sources */,
 				89AF86062C7B7BC40005D6E8 /* RaceCategoryEnum.swift in Sources */,
 			);
@@ -512,17 +484,6 @@
 			targetProxy = 89AF85B32C7B6C500005D6E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		89AF85A02C7B6C500005D6E8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89AF85A12C7B6C500005D6E8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		89AF85BA2C7B6C500005D6E8 /* Debug */ = {
