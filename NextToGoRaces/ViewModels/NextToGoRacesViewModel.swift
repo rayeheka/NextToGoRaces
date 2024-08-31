@@ -22,8 +22,8 @@ class NextToGoRacesViewModel: ObservableObject {
     
     private var racesManager: RacesManagerProtocol
     
-    private var countdownTimer: Timer?
-    private let countdownInterval: TimeInterval = 1
+    private var countdownTimer: AnyCancellable?
+    private let countdownInterval: TimeInterval = 1.0
     
     //MARK: - Init
     init(racesManager: RacesManagerProtocol) {
@@ -41,10 +41,11 @@ class NextToGoRacesViewModel: ObservableObject {
         allRaces = convertedRaces
         
         // Schedule countdown updates every `countdownInterval` seconds to show smooth seconds changing
-        countdownTimer = Timer.scheduledTimer(withTimeInterval: self.countdownInterval, repeats: true) { [weak self] _ in
-            guard let self else { return }
-            self.updateCountdowns()
-        }
+        countdownTimer = Timer.publish(every: countdownInterval, on: .main, in: .common)
+            .autoconnect()
+            .sink { [weak self] _ in
+                self?.updateCountdowns()
+            }
     }
     
     /// This function filters races based on category.
@@ -77,7 +78,8 @@ class NextToGoRacesViewModel: ObservableObject {
             temp.append(race)
             //check if any race past 1 minute of its start time
             if timeRemaining < -60.0 {
-                countdownTimer?.invalidate()
+                countdownTimer?.cancel()
+                countdownTimer = nil
                 Task {
                     await getRaces()
                     return
