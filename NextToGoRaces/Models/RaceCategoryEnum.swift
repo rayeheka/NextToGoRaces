@@ -24,7 +24,7 @@ enum RaceCategory: String, CaseIterable, Equatable {
         }
     }
     
-    var image: UIImage? {
+    var image: UIImage! {
         switch self {
         case .greyhound:
             return UIImage(named: Gallery.greyhoundRacing.rawValue)

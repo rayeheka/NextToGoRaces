@@ -32,7 +32,6 @@
 		89AF85FE2C7B7AFD0005D6E8 /* RacesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85FD2C7B7AFD0005D6E8 /* RacesService.swift */; };
 		89AF86002C7B7B120005D6E8 /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF85FF2C7B7B120005D6E8 /* Races.swift */; };
 		89AF86022C7B7B410005D6E8 /* RaceSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86012C7B7B410005D6E8 /* RaceSummary.swift */; };
-		89AF86042C7B7B640005D6E8 /* AdvertisedStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86032C7B7B640005D6E8 /* AdvertisedStart.swift */; };
 		89AF86062C7B7BC40005D6E8 /* RaceCategoryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF86052C7B7BC40005D6E8 /* RaceCategoryEnum.swift */; };
 		89AF860C2C7B7D330005D6E8 /* NextToGoRacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF860B2C7B7D330005D6E8 /* NextToGoRacesViewController.swift */; };
 		89AF860E2C7B7D550005D6E8 /* NextToGoRacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF860D2C7B7D550005D6E8 /* NextToGoRacesView.swift */; };
@@ -98,7 +97,6 @@
 		89AF85FD2C7B7AFD0005D6E8 /* RacesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesService.swift; sourceTree = "<group>"; };
 		89AF85FF2C7B7B120005D6E8 /* Races.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Races.swift; sourceTree = "<group>"; };
 		89AF86012C7B7B410005D6E8 /* RaceSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSummary.swift; sourceTree = "<group>"; };
-		89AF86032C7B7B640005D6E8 /* AdvertisedStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisedStart.swift; sourceTree = "<group>"; };
 		89AF86052C7B7BC40005D6E8 /* RaceCategoryEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCategoryEnum.swift; sourceTree = "<group>"; };
 		89AF860B2C7B7D330005D6E8 /* NextToGoRacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesViewController.swift; sourceTree = "<group>"; };
 		89AF860D2C7B7D550005D6E8 /* NextToGoRacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesView.swift; sourceTree = "<group>"; };
@@ -255,7 +253,6 @@
 				89AF85F62C7B7A580005D6E8 /* BaseResponse.swift */,
 				89AF85FF2C7B7B120005D6E8 /* Races.swift */,
 				89AF86012C7B7B410005D6E8 /* RaceSummary.swift */,
-				89AF86032C7B7B640005D6E8 /* AdvertisedStart.swift */,
 				89AF86052C7B7BC40005D6E8 /* RaceCategoryEnum.swift */,
 			);
 			path = Models;
@@ -496,7 +493,6 @@
 				89AF85982C7B6C4E0005D6E8 /* SceneDelegate.swift in Sources */,
 				89AF86132C7B7E4B0005D6E8 /* UITableViewCell+Extension.swift in Sources */,
 				89AF85FC2C7B7AE80005D6E8 /* RacesServiceEndpoint.swift in Sources */,
-				89AF86042C7B7B640005D6E8 /* AdvertisedStart.swift in Sources */,
 				89AF85FE2C7B7AFD0005D6E8 /* RacesService.swift in Sources */,
 				89AF86192C7B803B0005D6E8 /* RacesManager.swift in Sources */,
 				89AF861E2C7B81360005D6E8 /* RaceSummaryViewModel.swift in Sources */,

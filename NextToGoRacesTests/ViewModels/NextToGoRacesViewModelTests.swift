@@ -31,13 +31,13 @@ class NextToGoRacesViewModelTests: XCTestCase {
         let race1 = RaceSummary(raceNumber: 1,
                                 meetingName: "Meeting 1",
                                 categoryId: "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
-                                advertisedStartSeconds: AdvertisedStart(seconds: currentUnixEpochTimeInSeconds + 60))
+                                advertisedStartSeconds: currentUnixEpochTimeInSeconds + 60)
         let race1ViewModel = RaceSummaryViewModel(raceSummary: race1)
         
         let race2 = RaceSummary(raceNumber: 2,
                                 meetingName: "Meeting 2",
                                 categoryId: "161d9be2-e909-4326-8c2c-35ed71fb460b",
-                                advertisedStartSeconds: AdvertisedStart(seconds: currentUnixEpochTimeInSeconds + 120))
+                                advertisedStartSeconds: currentUnixEpochTimeInSeconds + 120)
         let race2ViewModel = RaceSummaryViewModel(raceSummary: race2)
 
         mockRacesManager.fetchRacesResult = [race1, race2]
@@ -61,12 +61,12 @@ class NextToGoRacesViewModelTests: XCTestCase {
         let race1 = RaceSummary(raceNumber: 1,
                                 meetingName: "Meeting 1",
                                 categoryId: "9daef0d7-bf3c-4f50-921d-8e818c60fe61",
-                                advertisedStartSeconds: AdvertisedStart(seconds: currentUnixEpochTimeInSeconds + 60))
+                                advertisedStartSeconds: currentUnixEpochTimeInSeconds + 60)
         let race1ViewModel = RaceSummaryViewModel(raceSummary: race1)
         let race2 = RaceSummary(raceNumber: 2,
                                 meetingName: "Meeting 2",
                                 categoryId: "161d9be2-e909-4326-8c2c-35ed71fb460b",
-                                advertisedStartSeconds: AdvertisedStart(seconds: currentUnixEpochTimeInSeconds + 120))
+                                advertisedStartSeconds: currentUnixEpochTimeInSeconds + 120)
         let race2ViewModel = RaceSummaryViewModel(raceSummary: race2)
         
         viewModel.allRaces = [race1ViewModel, race2ViewModel]

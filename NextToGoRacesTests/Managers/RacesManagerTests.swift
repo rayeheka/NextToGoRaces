@@ -31,11 +31,11 @@ class RacesManagerTests: XCTestCase {
                                            raceSummaries: ["1": RaceSummary(raceNumber: 1,
                                                                             meetingName: "Meeting 1",
                                                                             categoryId: "Category 1",
-                                                                            advertisedStartSeconds: AdvertisedStart(seconds: currentUnixEpochTimeInSeconds + 10)),
+                                                                            advertisedStartSeconds: currentUnixEpochTimeInSeconds + 10),
                                                            "2": RaceSummary(raceNumber: 2,
                                                                             meetingName: "Meeting 2",
                                                                             categoryId: "Category 2",
-                                                                            advertisedStartSeconds: AdvertisedStart(seconds: currentUnixEpochTimeInSeconds + 20))])
+                                                                            advertisedStartSeconds: currentUnixEpochTimeInSeconds + 20)])
         // When
         let races = await racesManager.fetchRaces()
         // Then
@@ -49,11 +49,11 @@ class RacesManagerTests: XCTestCase {
                                            raceSummaries: ["1": RaceSummary(raceNumber: 1,
                                                                             meetingName: "Meeting 1",
                                                                             categoryId: "Category 1",
-                                                                            advertisedStartSeconds: AdvertisedStart(seconds: currentUnixEpochTimeInSeconds - 70)),
+                                                                            advertisedStartSeconds: currentUnixEpochTimeInSeconds - 70),
                                                            "2": RaceSummary(raceNumber: 2,
                                                                             meetingName: "Meeting 2",
                                                                             categoryId: "Category 2",
-                                                                            advertisedStartSeconds: AdvertisedStart(seconds: currentUnixEpochTimeInSeconds + 20))])
+                                                                            advertisedStartSeconds: currentUnixEpochTimeInSeconds + 20)])
         // When
         let races = await racesManager.fetchRaces()
         // Then
