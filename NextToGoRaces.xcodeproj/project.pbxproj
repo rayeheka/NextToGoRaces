@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		894303272C7ED73100A0EA85 /* NextToGoRacesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894303262C7ED73100A0EA85 /* NextToGoRacesApp.swift */; };
+		8943032C2C7ED8FC00A0EA85 /* NextToGoRacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943032B2C7ED8FC00A0EA85 /* NextToGoRacesView.swift */; };
+		8943032E2C7EDD8200A0EA85 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943032D2C7EDD8200A0EA85 /* FilterView.swift */; };
+		894303302C7EDEF600A0EA85 /* RaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943032F2C7EDEF600A0EA85 /* RaceView.swift */; };
 		898DB7D92C7C29D100042BDE /* RacesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DB7D82C7C29D100042BDE /* RacesServiceTests.swift */; };
 		898DB7DB2C7C29FB00042BDE /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DB7DA2C7C29FB00042BDE /* MockNetworkService.swift */; };
 		898DB7DE2C7C2F0800042BDE /* URLSessionServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DB7DD2C7C2F0800042BDE /* URLSessionServicesTests.swift */; };
@@ -59,6 +63,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		894303262C7ED73100A0EA85 /* NextToGoRacesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesApp.swift; sourceTree = "<group>"; };
+		8943032B2C7ED8FC00A0EA85 /* NextToGoRacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextToGoRacesView.swift; sourceTree = "<group>"; };
+		8943032D2C7EDD8200A0EA85 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		8943032F2C7EDEF600A0EA85 /* RaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceView.swift; sourceTree = "<group>"; };
 		898DB7D82C7C29D100042BDE /* RacesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesServiceTests.swift; sourceTree = "<group>"; };
 		898DB7DA2C7C29FB00042BDE /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 		898DB7DD2C7C2F0800042BDE /* URLSessionServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionServicesTests.swift; sourceTree = "<group>"; };
@@ -122,6 +130,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		894303252C7ED71900A0EA85 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				894303262C7ED73100A0EA85 /* NextToGoRacesApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		894303282C7ED76B00A0EA85 /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				8943032B2C7ED8FC00A0EA85 /* NextToGoRacesView.swift */,
+				8943032D2C7EDD8200A0EA85 /* FilterView.swift */,
+				8943032F2C7EDEF600A0EA85 /* RaceView.swift */,
+			);
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
 		898DB7D72C7C29C200042BDE /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +195,8 @@
 		89AF85942C7B6C4E0005D6E8 /* NextToGoRaces */ = {
 			isa = PBXGroup;
 			children = (
+				894303282C7ED76B00A0EA85 /* SwiftUIViews */,
+				894303252C7ED71900A0EA85 /* App */,
 				89AF861F2C7B82F20005D6E8 /* Utilities */,
 				89AF861A2C7B81090005D6E8 /* ViewModels */,
 				89AF86172C7B802B0005D6E8 /* Managers */,
@@ -427,11 +455,13 @@
 				89AF86292C7B86970005D6E8 /* Array+Extensions.swift in Sources */,
 				89AF86162C7B7E9C0005D6E8 /* UITableView+Extension.swift in Sources */,
 				89AF86002C7B7B120005D6E8 /* Races.swift in Sources */,
+				8943032C2C7ED8FC00A0EA85 /* NextToGoRacesView.swift in Sources */,
 				89AF861C2C7B811A0005D6E8 /* NextToGoRacesViewModel.swift in Sources */,
 				89AF85F42C7B7A430005D6E8 /* NetworkError.swift in Sources */,
 				89AF85F02C7B79D70005D6E8 /* ServiceEndpointProtocol.swift in Sources */,
 				89AF85F22C7B7A1B0005D6E8 /* URLSessionService.swift in Sources */,
 				89AF86272C7B86680005D6E8 /* UICollectionView+Extension.swift in Sources */,
+				8943032E2C7EDD8200A0EA85 /* FilterView.swift in Sources */,
 				89AF86252C7B865A0005D6E8 /* UICollectionViewCell+Extension.swift in Sources */,
 				89AF86212C7B83000005D6E8 /* Gallery.swift in Sources */,
 				89AF85F92C7B7A8C0005D6E8 /* Configs.swift in Sources */,
@@ -440,8 +470,10 @@
 				89AF85FE2C7B7AFD0005D6E8 /* RacesService.swift in Sources */,
 				89AF86192C7B803B0005D6E8 /* RacesManager.swift in Sources */,
 				89AF861E2C7B81360005D6E8 /* RaceSummaryViewModel.swift in Sources */,
+				894303272C7ED73100A0EA85 /* NextToGoRacesApp.swift in Sources */,
 				89AF85EE2C7B79C10005D6E8 /* NetworkServiceProtocol.swift in Sources */,
 				89AF86062C7B7BC40005D6E8 /* RaceCategoryEnum.swift in Sources */,
+				894303302C7EDEF600A0EA85 /* RaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

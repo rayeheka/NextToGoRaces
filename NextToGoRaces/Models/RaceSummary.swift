@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct RaceSummary: Codable {
+struct RaceSummary: Codable, Identifiable {
+    var id = UUID()
+    
     var raceNumber: Int
     var meetingName: String
     

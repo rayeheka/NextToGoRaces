@@ -7,12 +7,12 @@
 
 import Foundation
 
-class RaceSummaryViewModel: ObservableObject {
+class RaceSummaryViewModel: ObservableObject, Identifiable {
     var meetingName: String
     var raceNumber: Int
     var category: RaceCategory
     var advertisedStartDate: Date
-    var advertisedStart: Double
+    @Published var advertisedStart: Double
     var formattedAdvertisedStart: String {
         convertSecondsToFormattedTime(seconds: advertisedStart)
     }

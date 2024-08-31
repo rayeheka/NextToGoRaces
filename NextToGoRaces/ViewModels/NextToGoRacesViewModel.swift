@@ -15,11 +15,10 @@ import Combine
 class NextToGoRacesViewModel: ObservableObject {
     //MARK: - Properties
     @Published var filteredRaces: [RaceSummaryViewModel] = []
+    @Published var selectedCategories: Set<RaceCategory> = Set(RaceCategory.allCases)
     
     var allRaces: [RaceSummaryViewModel] = []
-    
-    private var selectedCategories: Set<RaceCategory> = Set(RaceCategory.allCases)
-    
+
     private var racesManager: RacesManagerProtocol
     
     private var countdownTimer: AnyCancellable?
